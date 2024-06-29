@@ -1,0 +1,11 @@
+.search {
+    width: 50%;
+}
+
+.searchInput {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 97%;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}

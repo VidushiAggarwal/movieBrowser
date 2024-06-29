@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Web Assignment - Movie Browser
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Description:
+Create a movie-browsing web application that allows users to search for movies with advanced filtering options and save their favorite movies. The application should be responsive and accessible.
 
-## Available Scripts
+# Requirements:
+1. Use a modern frontend framework/library (e.g., React, Vue, Angular, Svelte) to build the application to create a responsive, mobile-first UI.
+2. Use a public movie API (e.g., IMDb API, TMDB API) to fetch movie data.
+3. Display a list of movies on the homepage, including the movie title, poster image, and release year.
+4. Implement a search feature that allows users to search for movies by title. The search should update the list of movies dynamically as the user types.
+5. Implement infinite scrolling to handle large numbers of search results.
+6. Implement advanced filtering options for movies, such as filtering by genre, release year range, and rating range. Filters should update the list of movies dynamically. [optional]
+7. Allow users to save their favorite movies. Favorite movies should be stored locally (e.g., using browser storage). [optional]
+8. Ensure the application is accessible to users with disabilities by following accessibility best practices.
+9. Write clean, well-structured code following best practices for front-end development.
+10. Provide documentation explaining your design decisions, how to run the application, and any additional features implemented.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Evaluation Criteria:
+1. Functionality: Does the application meet the basic requirements? Does it work as expected?
+2. Code Quality: Is the code well-structured, readable, and maintainable? Does it follow best practices?
+3. UI/UX: Is the user interface intuitive and visually appealing? Does it provide a good user experience?
+4. Performance: Does the application load quickly and efficiently, even with a large number of movies?
+5. Accessibility: Is the application accessible to users with disabilities? Does it follow accessibility best practices?
+6. Documentation: Is there clear documentation explaining how to run the application and any additional features implemented?
+7. Speedy Submission: Was the application submitted significantly ahead of the deadline without compromising on quality?
+8. Bonus Points: For implementing additional features or going above and beyond the basic requirements in a creative and thoughtful way.
