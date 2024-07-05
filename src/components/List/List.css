@@ -7,12 +7,28 @@
     gap: 2rem;
 }
 
+@media only screen and (max-width: 1200px) {
+    .movieList {
+        margin: 2rem;
+    }
+}
+
 .movieListItem {
     background: #1a1a1a;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
+    transition: transform .2s;
+}
+
+.movieListItem:hover {
+    transform: scale(1.1);
+    .favBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .movieImg {
@@ -29,9 +45,3 @@
 .movieYear {
     padding-bottom: 1rem;
 }
-
-@media only screen and (max-width: 1200px) {
-    .movieList {
-        margin: 2rem;
-    }
-  }

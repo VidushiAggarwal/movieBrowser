@@ -1,7 +1,7 @@
-import "./MovieList.css";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Spinner from "../Spinner/Spinner";
 import { useState } from "react";
+import List from "../List/List";
 
 const MovieList = ({
   searchValue,
@@ -10,6 +10,8 @@ const MovieList = ({
   page,
   setPage,
   setError,
+  favMovie,
+  setFavMovie,
 }) => {
   const [spinner, showSpinner] = useState(false);
 
@@ -27,6 +29,23 @@ const MovieList = ({
     setPage(page + 1);
   };
 
+  const addFavouriteMovie = (movie) => {
+    const id = movie.currentTarget.parentElement.id;
+    const selectedMovie = movies.filter((movie) => movie.imdbID === id);
+
+    const existingMovie = favMovie.filter(
+      (movie) => movie.imdbID === selectedMovie[0].imdbID
+    );
+    if (existingMovie.length === 0) {
+      const newFavouriteList = [...favMovie, ...selectedMovie];
+      setFavMovie(newFavouriteList);
+      localStorage.setItem(
+        "react-movie-app-favourites",
+        JSON.stringify(newFavouriteList)
+      );
+    }
+  };
+
   return (
     <InfiniteScroll
       dataLength={movies.length}
@@ -34,15 +53,11 @@ const MovieList = ({
       hasMore={page <= 5 ? true : false}
       loader={spinner && <Spinner />}
     >
-      <ul className="movieList">
-        {movies.map((movie, index) => (
-          <li key={index} className="movieListItem">
-            <img className="movieImg" src={movie.Poster} alt={movie.Title} />
-            <div className="movieTitle">{movie.Title}</div>
-            <div className="movieYear">{movie.Year}</div>
-          </li>
-        ))}
-      </ul>
+      <List
+        movies={movies}
+        handleFavouritesClick={addFavouriteMovie}
+        favMovie={favMovie}
+      />
     </InfiniteScroll>
   );
 };

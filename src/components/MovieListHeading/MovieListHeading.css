@@ -1,3 +1,21 @@
 .title {
-    margin: 0;
+    font-size: 1.5rem;
+    padding-left: 9rem;
+    margin-bottom: 0px;
+}
+
+.title:before {
+    background: #f5c518;
+    border-radius: 2rem;
+    content: "";
+    margin-left: -1rem;
+    position: absolute;
+    height: 2rem;
+    width: 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .title {
+        padding-left: 3rem;
+    }
 }

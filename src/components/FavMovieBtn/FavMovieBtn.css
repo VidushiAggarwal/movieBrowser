@@ -1,0 +1,18 @@
+.favBtn {
+    display: none;
+    position: absolute;
+    color: white;
+    background: #1a1a1aa3;
+    width: 100%;
+    border: none;
+}
+
+.favIcon {
+    width: 2rem;
+}
+
+.heartIcon {
+    color: #ed0202;
+    height: 1rem;
+    padding-right: 0.5rem;
+}
